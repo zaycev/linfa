@@ -61,8 +61,8 @@ pub struct LinearRegression {
 )]
 /// A fitted linear regression model which can be used for making predictions.
 pub struct FittedLinearRegression<F> {
-    intercept: F,
-    params: Array1<F>,
+    pub intercept: F,
+    pub params: Array1<F>,
 }
 
 impl Default for LinearRegression {
